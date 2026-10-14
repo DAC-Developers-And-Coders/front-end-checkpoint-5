@@ -1,1 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+    --font-body: 'Urbanist', sans-serif;
+    --text-title: clamp(2.5rem, 5vw + 1rem, 6rem);
+    --color-light: oklch(93.653% 0.03125 70.455);
+    --color-dark: oklch(28.334% 0.03307 71.616); 
+    --color-collection: oklch(96.115% 0.00011 271.152);
+
+    --animate-slide: slide 10s infinite linear;
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
